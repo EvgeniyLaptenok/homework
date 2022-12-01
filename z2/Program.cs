@@ -12,15 +12,12 @@ int inputNum3 = int.Parse(num3);
 
 int max = inputNum1;
 
-if (max > inputNum2)
+if (inputNum2 > max)
 {
-   Console.WriteLine(max);
+   max = inputNum2;
 }
-else if (inputNum2 > inputNum3)
+if (inputNum3 > max)
 {
-    Console.WriteLine(inputNum2);
+    max = inputNum3;
 }
-else 
-{
-    Console.WriteLine(inputNum3);
-}
+Console.WriteLine(max);
